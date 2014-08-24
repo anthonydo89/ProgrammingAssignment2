@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix creates a list of functions 
+## which help to cut the memory use of calculating the inverses of large matrices.
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -25,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve returns a matrix which is the inverse of the input, but only calculates if there's no inverse stored in memory.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
